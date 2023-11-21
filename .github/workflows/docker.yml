@@ -45,5 +45,5 @@ jobs:
           build-args: |
             COMMIT_SHA=${{ github.sha }}
           tags: |
-            jensforstmann/tmt2:${{ github.sha }}
-            jensforstmann/tmt2:latest
+            xe1os/tmt2:${{ github.sha }}
+            xe1os/tmt2:latest

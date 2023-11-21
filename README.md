@@ -1,5 +1,5 @@
-[![Docker Pulls](https://img.shields.io/docker/pulls/jensforstmann/tmt2)](https://hub.docker.com/r/jensforstmann/tmt2)
-[![Docker Image Size (tag)](https://img.shields.io/docker/image-size/jensforstmann/tmt2/latest)](https://hub.docker.com/r/jensforstmann/tmt2)
+[![Docker Pulls](https://img.shields.io/docker/pulls/xe1os/tmt2)](https://hub.docker.com/r/xe1os/tmt2)
+[![Docker Image Size (tag)](https://img.shields.io/docker/image-size/xe1os/tmt2/latest)](https://hub.docker.com/r/xe1os/tmt2)
 
 
 
@@ -58,22 +58,22 @@ Table of Contents:
 
 ## Getting Started
 
-TMT2 is available on docker hub: https://hub.docker.com/r/jensforstmann/tmt2
+TMT2 is available on docker hub: https://hub.docker.com/r/xe1os/tmt2
 
 Run it with:
 
 ```sh
-docker run --name tmt2 -d -p 8080:8080 jensforstmann/tmt2
+docker run --name tmt2 -d -p 8080:8080 xe1os/tmt2
 ```
 
 Data will be written within the container to `/app/backend/storage`. To keep the files with different containers you can either specify a docker volume or a path on the local system:
 
 ```sh
 # docker volume
-docker run --name tmt2 -d -p 8080:8080 -v dockerVolumeName:/app/backend/storage jensforstmann/tmt2
+docker run --name tmt2 -d -p 8080:8080 -v dockerVolumeName:/app/backend/storage xe1os/tmt2
 
 # local host directory
-docker run --name tmt2 -d -p 8080:8080 -v /home/tmt2/storage:/app/backend/storage jensforstmann/tmt2
+docker run --name tmt2 -d -p 8080:8080 -v /home/tmt2/storage:/app/backend/storage xe1os/tmt2
 ```
 
 The matches which are neither finished nor stopped will be loaded on application start.

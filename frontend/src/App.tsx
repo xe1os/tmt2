@@ -28,11 +28,11 @@ const NavBar: Component = () => {
 			<div class="w-1 lg:w-20"></div>
 			<div>
 				<img class="mr-1 inline-block h-10 w-auto align-middle" src={logo} alt="Logo" />
-				<div class="inline-block align-middle text-xs lg:hidden">TMT</div>
+				<div class="inline-block align-middle text-xs lg:hidden">CS2</div>
 				<div class="hidden align-middle text-xs lg:inline-block">
 					Tournament
 					<br />
-					MatchTracker
+					Panel
 				</div>
 			</div>
 			<div class="grow"></div>
